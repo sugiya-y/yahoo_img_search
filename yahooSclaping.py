@@ -9,7 +9,7 @@ from time import time, sleep
 from urllib.request import urlopen, Request
 from urllib.parse import quote
 
-sys.path.append('~/local')
+sys.path.append('/home/yanailab/sugiya-y/local')
 from bs4 import BeautifulSoup
 
 MY_EMAIL_ADDR = 'sugiya-y@mm.inf.uec.ac.jp'
