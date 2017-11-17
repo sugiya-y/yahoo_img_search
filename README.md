@@ -1,1 +1,9 @@
 # yahoo_img_search
+
+yahoo画像検索から画像を抽出します
+検索したいキーワードを"QueryWords.txt"に書き込んで
+python3 yahooSclaping.py
+すれば収集できます
+
+yahooがアクセス過多の端末からのアクセス要求を拒否することがあるので、
+forループの回数を変更したり、waitキーを短くしたりするとエラーになります
