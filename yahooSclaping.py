@@ -9,7 +9,7 @@ from time import time, sleep
 from urllib.request import urlopen, Request
 from urllib.parse import quote
 
-sys.path.append('/home/yanailab/sugiya-y/local')
+sys.path.append('~/local')
 from bs4 import BeautifulSoup
 
 MY_EMAIL_ADDR = 'sugiya-y@mm.inf.uec.ac.jp'
@@ -82,6 +82,9 @@ if __name__ == '__main__':
 #    fetch_and_save_img(word)
 
     i=0
+    while os.path.isdir('data/' + str(i)):
+        i += 1
+
     sec = 7200 #wait 60min for yahoo's reaction or yahoo desable
 
     with open('QueryWords.txt', encoding='utf-8') as f:
@@ -92,3 +95,4 @@ if __name__ == '__main__':
             i += 1
             sleep(sec) # wait set time
         print("end")
+
